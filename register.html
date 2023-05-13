@@ -1,115 +1,82 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="styles.css" rel="stylesheet">
+    <script src="register.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <style>
-      /* Estilos personalizados */
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-      }
-
-      .header {
-        background-color: #fff;
-        padding: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      .header nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .header span {
-        margin-right: 10px;
-      }
-
-      .titulo {
-        font-size: 36px;
-        margin-top: 40px;
-      }
-
-      .subtitulos div {
-        margin-bottom: 10px;
-        color: #777;
-      }
-
-      .caracteristicas-evento {
-        margin-top: 40px;
-      }
-
-      .caracteristicas-evento span {
-        display: block;
-        margin-bottom: 10px;
-      }
-
-      footer {
-        background-color: #f8f8f8;
-        padding: 20px;
-        text-align: center;
-      }
-
-      footer ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-      }
-
-      footer li {
-        margin-right: 10px;
-      }
-    </style>
-    <title>MetaVirbela</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<title>MetaVirbela</title>
   </head>
-  <body>
-    <header class="header">
-        <nav>
+  <body class="fondo">
+    <header>
+        <div class="nav">
             <div>
-                <span>Redes sociales</span>
-                <span>Modo oscuro/Modo Claro</span>
-                <span>Registrarse</span>
+                <a class="action-buton" href="register.html">Registrarse</a>
+                <a class = "redes"href="https://www.instagram.com/unahurlingham/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                </a>
+                <a href="#">Modo oscuro/Modo claro</a>
             </div>
-        </nav>
+        </div>
     </header>
-    <main>
-        <h1 class="titulo">MetaVirbela</h1>
-        <section class="titulo subtitulos">
-            <div>Explora el metaverso del aprendizaje</div>
-            <div>Participa de este evento y únete a conferencias y cursos en vivo en entornos virtuales</div>
-            <div>Una experiencia única donde podrás colaborar con expertos y estudiantes de todo el mundo sin salir de tu hogar</div>
+    <main >
+        <section>
+                <h1 class="titulo-registrarse">MetaVirbela</h1>
         </section>
-        <section class="caracteristicas-evento">
-            <div>
-                <span>
-                    Durante este evento, descubrirás cómo el metaverso está revolucionando la forma en que aprendemos y trabajamos.
-                </span>
-                <br>
-                <span>
-                    Exploraremos las tecnologías emergentes que están impulsando esta transformación, como la realidad virtual, la inteligencia artificial y la realidad aumentada y cómo todo esto afectará nuestro futuro.
-                </span>
-                <br>
-                <span>
-                Discutiremos por qué los mundos virtuales se están convirtiendo en un tema cada vez más relevante.
-                </span>
-                <br>
-                <span>
-                No te pierdas la oportunidad de formar parte de esta emocionante revolución del aprendizaje remoto. ¡Únete a nosotros en el Metaverso! ¡Inscríbete ahora y asegura tu lugar en este evento innovador!
-                </span>
+        <section>
+          <div>
+            <form>
+              <div class="form-group m-2 text-white">
+                <label>Nombre</label>
+                <input type="text" id="nombre" aria-describedby="emailHelp" placeholder="Nombre" maxlength="20">
+               </div>
+               <div class="form-group m-2 text-white">
+                <label>Apellido</label>
+                <input type="text" id="apellido" aria-describedby="emailHelp" placeholder="Apellido" maxlength="10">
+               </div>
+              <div class="form-group m-2 text-white">
+                <label>Correo electronico</label>
+                <input type="text" id="email" aria-describedby="emailHelp" placeholder="Correo electronico">
+               </div>
+              <div class="form-group m-2 text-white">
+                <label>Contraseña</label>
+                <input type="password" id="contraseña" placeholder="Contraseña" maxlength="16">
+              </div>
+              <div class="form-group m-2 text-white">
+                <label>Confirmar contraseña</label>
+                <input type="password" id="confirmarContraseña" placeholder="Confirmar contraseña" maxlength="16">
+              </div>
+              <div class="form-group m-2 text-white">
+                <label for="start">Fecha de nacimiento</label>
+                <input id="fechaNacimiento" type="date" min="1910-01-01">
+              </div>
+              <button id="botonRegistrarse" class="m-2">Registrarse</button>
+            </form>
+          </div>
+        </section>
+        <section>
+          <footer class="text-white">
+              <nav>
+                <div class="footer-menu">
+                  <a href="index.html">Home</a>
+                  <a href="https://goo.gl/maps/KShwZfEYRwxGa6jw6" target="_blank">Localizacion</a>
+                  <span> gianbellone@gmail.com </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <a href="https://www.instagram.com/unahurlingham/" target="_blank">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </a>
+                  </svg>
                 </div>
-                </section>
-                <footer>
-                <nav>
-                <ul>
-                <li>Localización</li>
-                <li>Contacto</li>
-                <li>Inicio</li>
-                <li>Redes sociales</li>
-                </ul>
-                </nav>
-                </footer>
-                </main>
-                  </body>
-                </html>
+              </nav>
+          </footer>
+        </section>
+    </main>
+  </body>
+</html>

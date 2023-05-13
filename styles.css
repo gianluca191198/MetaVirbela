@@ -1,6 +1,8 @@
 .fondo{
     background: #9c6aff;
     background: linear-gradient(180deg, #333 10%, #9c6aff 90%);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .titulo{
     display: block;
@@ -13,8 +15,44 @@
     font-family: "Varela Round";
 }
 
+.titulo-registrarse{
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    color: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    text-shadow: 1px 1px 3px #000;
+    font-size: 5vw;
+    margin: 60px;
+    font-family: "Varela Round";
+}
+
+form{
+    padding-left: 550px;
+    margin-bottom: 80px;
+    font-family: "Varela Round";
+}
+input{
+    display: block;
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+}
+button{
+    background-color: #ebb52f;
+    border: none;
+    margin-left: 55px;
+    padding: 10px 20px 10px 20px;
+}
+
 .header{
     text-align: right;
+}
+
+body{
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    border:none;
+    width: 100%;
 }
 
 .caracteristicas-evento{
@@ -60,6 +98,14 @@ footer{
     background-color: #ebb52f;
     margin-right: 20px;
     font-family: "Varela Round";
+
+}
+.nav .redes{
+    text-align: center;
+    align-items: center;
+    padding: 14px 11px 14px 15px;
+    margin-left: 5px;
+    border-radius: 3px;
 }
 .nav a:hover {
     background-color: #ffd415;
@@ -84,11 +130,10 @@ footer{
 }
 
 .contenedor-textbox {
-  padding: 80px 150px 250px 150px;
-  width: 100vw;
-  height: 100vh;
+  margin-bottom: 80px;
   display: flex;
   justify-content: center;
+  min-height: 380px;
 }
 
 .textbox {
@@ -133,7 +178,7 @@ footer{
     padding: 60px 0px 100px 50px;
     font-size: x-large;
     vertical-align: middle;
-    width: 75vw;
+    width: 1120px;
     text-align: justify;
 }
 
@@ -150,7 +195,30 @@ footer{
     vertical-align: middle;
     padding: 10px 10px 10px 10px;
 }
+.footer-menu svg{
+    margin: 15px 0px 0px 10px;
+}
+.footer-menu span{
+    margin: 10px 0px 0px 5px;
+}
+
 .footer-menu a:hover{
     background-color: #ebb52f;
     color: #000;
+}
+
+.info-evento{
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid;
+    border-color: #ddd;
+    text-align: center;
+    margin: 0px 200px 10px 200px;
+    font-family: "Varela Round";
+    padding: 20px 0px 20px 0px;
+    font-size: large;
+    border-radius: 3px;
+}
+.info-evento b{
+    color:#ebb52f;
 }
