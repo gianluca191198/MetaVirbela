@@ -45,6 +45,12 @@ function enviarFormulario(evento){
             botonRegistrarse.value = 'Registrarse';
           alert(JSON.stringify(err));
         });
+
+        emailjs.send("service_odza8ec","template_in8p4yg",{
+            nombreUsuario: nombre,
+            apellidoUsuario: apellido,
+            emailUsuario: correoElectronico,
+        });
    }
 }
 
