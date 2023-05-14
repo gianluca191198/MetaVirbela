@@ -24,15 +24,16 @@ function enviarFormulario(evento){
 
    const serviceID = 'service_odza8ec';
    const templateID = 'template_lsdbl8d';
+
    if(errorCamposVacios){
-    alert('Por favor completa los campos vacios');
+        alert('Por favor completa los campos vacios');
     }else if(errorCorreo){
        alert('El correo electronico no es valido');
-   }else if(errorContraseña){
+    }else if(errorContraseña){
        alert('Las contraseñas no son iguales');
-   }else if(errorFechaNaciemiento){
+    }else if(errorFechaNaciemiento){
        alert('La fecha de nacimiento no es valida');
-   }else{
+    }else{
        emailjs.send(serviceID, templateID,{
         nombreDestinatario: nombre,
         apellidoDestinatario: appellido,
